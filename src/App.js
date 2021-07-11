@@ -43,10 +43,18 @@ function App() {
 
   return (
     <div className="container">
-      <div className="jumbotron h-100 p-5 bg-primary text-white">
-        <p className="lead text-center">
-          Buscador de Imagenes
-        </p>
+      <div className="jumbotron h-100 p-5 bg-primary text-white mt-2">
+        <div className="row mb-5 align-items-center">
+          <div className="col-md-6">
+            <h1 className="text-center">
+              Buscador de Imagenes
+            </h1>
+            <p>Encuentra muchas imagenes gratuitas para utilizar en tus trabajos.</p>
+          </div>
+          <div className="col-md-6 text-center">
+            <img width="200" src="galeria.png" alt="" />
+          </div>
+        </div>
         <Formulario
           setBuscar={setBuscar}
           setPageActual={setPageActual}
